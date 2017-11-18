@@ -12,7 +12,46 @@
 		489A680B1FBF79660022FBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489A68091FBF79660022FBEA /* Main.storyboard */; };
 		489A680D1FBF79660022FBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489A680C1FBF79660022FBEA /* Assets.xcassets */; };
 		489A68101FBF79660022FBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489A680E1FBF79660022FBEA /* LaunchScreen.storyboard */; };
+		489A682A1FBF79B60022FBEA /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489A68201FBF799E0022FBEA /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		489A681F1FBF799E0022FBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63B0AC571D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
+		489A68211FBF799E0022FBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 631751A81D59766500A9DDDC;
+			remoteInfo = "PMKA+Tests";
+		};
+		489A68231FBF799E0022FBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6314113C1D59795700E24B9E;
+			remoteInfo = PMKBridgeTests;
+		};
+		489A68251FBF799E0022FBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 630019221D596292003B4E30;
+			remoteInfo = PMKCoreTests;
+		};
+		489A68271FBF799E0022FBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6314112F1D5978D700E24B9E;
+			remoteInfo = PMKDispatchTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		489A68021FBF79660022FBEA /* promisekit animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "promisekit animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +61,7 @@
 		489A680C1FBF79660022FBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		489A680F1FBF79660022FBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		489A68111FBF79660022FBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PromiseKit.xcodeproj; path = "../../../Desktop/PromiseKit-master/PromiseKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489A682A1FBF79B60022FBEA /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +79,10 @@
 		489A67F91FBF79660022FBEA = {
 			isa = PBXGroup;
 			children = (
+				489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */,
 				489A68041FBF79660022FBEA /* promisekit animation */,
 				489A68031FBF79660022FBEA /* Products */,
+				489A68291FBF79B60022FBEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +105,25 @@
 				489A68111FBF79660022FBEA /* Info.plist */,
 			);
 			path = "promisekit animation";
+			sourceTree = "<group>";
+		};
+		489A68181FBF799E0022FBEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489A68201FBF799E0022FBEA /* PromiseKit.framework */,
+				489A68221FBF799E0022FBEA /* PMKA+Tests.xctest */,
+				489A68241FBF799E0022FBEA /* PMKBridgeTests.xctest */,
+				489A68261FBF799E0022FBEA /* PMKCoreTests.xctest */,
+				489A68281FBF799E0022FBEA /* PMKDispatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		489A68291FBF79B60022FBEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,12 +173,56 @@
 			mainGroup = 489A67F91FBF79660022FBEA;
 			productRefGroup = 489A68031FBF79660022FBEA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 489A68181FBF799E0022FBEA /* Products */;
+					ProjectRef = 489A68171FBF799E0022FBEA /* PromiseKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				489A68011FBF79660022FBEA /* promisekit animation */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		489A68201FBF799E0022FBEA /* PromiseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PromiseKit.framework;
+			remoteRef = 489A681F1FBF799E0022FBEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		489A68221FBF799E0022FBEA /* PMKA+Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "PMKA+Tests.xctest";
+			remoteRef = 489A68211FBF799E0022FBEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		489A68241FBF799E0022FBEA /* PMKBridgeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKBridgeTests.xctest;
+			remoteRef = 489A68231FBF799E0022FBEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		489A68261FBF799E0022FBEA /* PMKCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKCoreTests.xctest;
+			remoteRef = 489A68251FBF799E0022FBEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		489A68281FBF799E0022FBEA /* PMKDispatchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKDispatchTests.xctest;
+			remoteRef = 489A68271FBF799E0022FBEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		489A68001FBF79660022FBEA /* Resources */ = {
